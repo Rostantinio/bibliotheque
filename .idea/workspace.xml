@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae56053e-22d6-4bcc-a68a-c556fc3c590b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/library .sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/LibraryApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/config/DefaultDataBaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/dao/AuthorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/dao/TextbookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/model/Textbook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/services/AuthorManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/services/LibraryMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/services/TextbookManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/util/OptionSelector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AuthorManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/configtest/DataBaseConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/integration/AuthorDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/integration/TextbookDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/services/DataBasePrepareService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/services/DataBasePrepareServiceTextbook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/library (1).sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/config/DataBaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/config/DataBaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/constants/DBConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/constants/Queries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/dao/AuthorsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/model/Authors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/model/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/services/AuthorsManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/services/InteractiveShell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/util/InputReaderUtil.java" beforeDir="false" />
-    </list>
+    <list default="true" id="ae56053e-22d6-4bcc-a68a-c556fc3c590b" name="Changes" comment="Ajout de la fonctionnalite de mise a jour automatique des authors et des livres dans la base de donnee" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,6 +164,14 @@
       <option name="presentableId" value="Default" />
       <updated>1660229108251</updated>
     </task>
+    <task id="LOCAL-00001" summary="Ajout de la fonctionnalite de mise a jour automatique des authors et des livres dans la base de donnee">
+      <created>1661749243738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661749243738</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +187,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Ajout de la fonctionnalite de mise a jour automatique des authors et des livres dans la base de donnee" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la fonctionnalite de mise a jour automatique des authors et des livres dans la base de donnee" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
