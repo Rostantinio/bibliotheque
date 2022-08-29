@@ -1,17 +1,17 @@
-package com.biblio.bibliotheque.model;
+package com.softwify.libraryapp.model;
 
-public class Authors {
+public class Author {
     private int id;
     private String firstName;
     private String lastName;
 
-    public Authors() {
+    public Author(int id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public Authors(String firstName, String lastName) {
+    public Author(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -38,5 +38,9 @@ public class Authors {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getFullName() {
+        return firstName + " " + lastName;
     }
 }

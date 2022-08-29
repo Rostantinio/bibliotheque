@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.biblio.bibliotheque</groupId>
-    <artifactId>Bibliotheque</artifactId>
+    <groupId>com.softwify</groupId>
+    <artifactId>libraryapp</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -80,13 +80,6 @@
                             <goal>single</goal>
                         </goals>
                         <configuration>
-                            <archive>
-                                <manifest>
-                                    <mainClass>
-                                        com.biblio.bibliotheque.App
-                                    </mainClass>
-                                </manifest>
-                            </archive>
                             <descriptorRefs>
                                 <descriptorRef>executable-jar-with-dependencies</descriptorRef>
                             </descriptorRefs>

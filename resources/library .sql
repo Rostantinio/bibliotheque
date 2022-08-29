@@ -22,6 +22,9 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
+DROP DATABASE IF EXISTS library;
+CREATE DATABASE library;
+USE library;
 
 --
 -- Structure de la table `author`

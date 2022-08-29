@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae56053e-22d6-4bcc-a68a-c556fc3c590b" name="Changes" comment="" />
+    <list default="true" id="ae56053e-22d6-4bcc-a68a-c556fc3c590b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/library .sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/LibraryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/config/DefaultDataBaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/dao/AuthorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/dao/TextbookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/model/Textbook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/services/AuthorManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/services/LibraryMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/services/TextbookManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/util/OptionSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AuthorManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/configtest/DataBaseConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/AuthorDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/integration/TextbookDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/services/DataBasePrepareService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/services/DataBasePrepareServiceTextbook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/library (1).sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/config/DataBaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/config/DataBaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/constants/DBConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/constants/Queries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/dao/AuthorsDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/model/Authors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/model/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/services/AuthorsManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/services/InteractiveShell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/biblio/bibliotheque/util/InputReaderUtil.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +43,7 @@
       <list>
         <option value="package-info" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -35,18 +64,21 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kamdem/Bureau/SoftWify/bibliotheque&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.biblio.bibliotheque.App" />
-      <module name="Bibliotheque" />
+  <component name="RunManager" selected="Application.LibraryApplication">
+    <configuration name="LibraryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.softwify.libraryapp.LibraryApplication" />
+      <module name="libraryapp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.biblio.bibliotheque.*" />
+          <option name="PATTERN" value="com.softwify.libraryapp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -54,9 +86,100 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="libraryapp" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.softwify.libraryapp" />
+      <module name="libraryapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.biblio.bibliotheque.*" />
+          <option name="ENABLED" value="false" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextbookDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libraryapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.TextbookDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextbookDaoTest.deleteTextbookByIdShouldRemoveFromTheList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libraryapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.TextbookDaoTest" />
+      <option name="METHOD_NAME" value="deleteTextbookByIdShouldRemoveFromTheList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextbookDaoTest.deletingNonExistentTextbookShouldNotModifyTheList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libraryapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.TextbookDaoTest" />
+      <option name="METHOD_NAME" value="deletingNonExistentTextbookShouldNotModifyTheList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextbookDaoTest.displayTheListOfTextbooksFromTheDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libraryapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration" />
+      <option name="MAIN_CLASS_NAME" value="integration.TextbookDaoTest" />
+      <option name="METHOD_NAME" value="displayTheListOfTextbooksFromTheDatabase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
+        <item itemvalue="Application.LibraryApplication" />
+        <item itemvalue="JUnit.TextbookDaoTest.deleteTextbookByIdShouldRemoveFromTheList" />
+        <item itemvalue="JUnit.TextbookDaoTest.displayTheListOfTextbooksFromTheDatabase" />
+        <item itemvalue="JUnit.TextbookDaoTest.deletingNonExistentTextbookShouldNotModifyTheList" />
+        <item itemvalue="JUnit.TextbookDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -71,6 +194,20 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -78,7 +215,16 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Library$LibraryApplication.ic" NAME="LibraryApplication Coverage Results" MODIFIED="1660906690463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.biblio.bibliotheque.*</FILTER>
+    </SUITE>
   </component>
 </project>
