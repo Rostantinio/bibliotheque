@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae56053e-22d6-4bcc-a68a-c556fc3c590b" name="Changes" comment="Ajout de la fonctionnalite de mise a jour automatique des authors et des livres dans la base de donnee" />
+    <list default="true" id="ae56053e-22d6-4bcc-a68a-c556fc3c590b" name="Changes" comment="Ajout de la fonctionnalite de mise a jour automatique des authors et des livres dans la base de donnee">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TextbookManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/dao/TextbookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/dao/TextbookDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/services/LibraryMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/services/LibraryMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/services/TextbookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/services/TextbookManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/util/OptionSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwify/libraryapp/util/OptionSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/integration/TextbookDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/integration/TextbookDaoTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,64 +79,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextbookDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TextbookManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryapp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="integration" />
-      <option name="MAIN_CLASS_NAME" value="integration.TextbookDaoTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TextbookManagerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextbookDaoTest.deleteTextbookByIdShouldRemoveFromTheList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TextbookManagerTest.addTextbookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryapp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="integration" />
-      <option name="MAIN_CLASS_NAME" value="integration.TextbookDaoTest" />
-      <option name="METHOD_NAME" value="deleteTextbookByIdShouldRemoveFromTheList" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TextbookManagerTest" />
+      <option name="METHOD_NAME" value="addTextbookTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextbookDaoTest.deletingNonExistentTextbookShouldNotModifyTheList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TextbookManagerTest.displayTextbookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryapp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="integration" />
-      <option name="MAIN_CLASS_NAME" value="integration.TextbookDaoTest" />
-      <option name="METHOD_NAME" value="deletingNonExistentTextbookShouldNotModifyTheList" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TextbookManagerTest" />
+      <option name="METHOD_NAME" value="displayTextbookTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextbookDaoTest.displayTheListOfTextbooksFromTheDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TextbookManagerTest.processDeleteMustReturnFalseWhenTheTextbookDoesNotExistInTheDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryapp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="integration" />
-      <option name="MAIN_CLASS_NAME" value="integration.TextbookDaoTest" />
-      <option name="METHOD_NAME" value="displayTheListOfTextbooksFromTheDatabase" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TextbookManagerTest" />
+      <option name="METHOD_NAME" value="processDeleteMustReturnFalseWhenTheTextbookDoesNotExistInTheDao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,10 +132,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.LibraryApplication" />
-        <item itemvalue="JUnit.TextbookDaoTest.deleteTextbookByIdShouldRemoveFromTheList" />
-        <item itemvalue="JUnit.TextbookDaoTest.displayTheListOfTextbooksFromTheDatabase" />
-        <item itemvalue="JUnit.TextbookDaoTest.deletingNonExistentTextbookShouldNotModifyTheList" />
-        <item itemvalue="JUnit.TextbookDaoTest" />
+        <item itemvalue="JUnit.TextbookManagerTest.displayTextbookTest" />
+        <item itemvalue="JUnit.TextbookManagerTest" />
+        <item itemvalue="JUnit.TextbookManagerTest.processDeleteMustReturnFalseWhenTheTextbookDoesNotExistInTheDao" />
+        <item itemvalue="JUnit.TextbookManagerTest.addTextbookTest" />
       </list>
     </recent_temporary>
   </component>

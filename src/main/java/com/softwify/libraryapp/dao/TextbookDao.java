@@ -97,7 +97,7 @@ public class TextbookDao {
         return textbook;
     }
 
-    public Textbook saveTextbook(Textbook textbook){
+    public Textbook save(Textbook textbook){
         Connection connection = null;
         Textbook newTextbook = null;
         try {
@@ -107,7 +107,7 @@ public class TextbookDao {
             preparedStatement.setInt(2, textbook.getAuthor_id());
             preparedStatement.setInt(3, textbook.getIsbn());
             preparedStatement.setString(4, textbook.getEditor());
-            java.util.Date publicationDate = textbook.getPublicationDate();
+            Date publicationDate = textbook.getPublicationDate();
             java.sql.Date sqlPackageDate = new java.sql.Date(publicationDate.getTime());
             preparedStatement.setDate(5, sqlPackageDate);
             preparedStatement.executeUpdate();
@@ -125,9 +125,9 @@ public class TextbookDao {
         return newTextbook;
     }
 
-    public boolean checkExistingAuthor(Author author) {
+    public boolean getByFirstNameAndLastName(Author author) {
         Connection connection = null;
-        boolean isAuthorExist = false;
+        boolean textbook = false;
         try {
             connection = dataBaseConfig.getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(Queries.GET_AUTHOR_BY_FIRSTNAME_AND_LASTNAME);
@@ -136,7 +136,7 @@ public class TextbookDao {
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
                 int count = resultSet.getInt(1);
-                isAuthorExist = count > 0;
+                textbook = count > 0;
             }
             dataBaseConfig.closeResultSet(resultSet);
             dataBaseConfig.closePreparesStatement(preparedStatement);
@@ -146,6 +146,6 @@ public class TextbookDao {
             dataBaseConfig.closeConnection(connection);
         }
 
-        return isAuthorExist;
+        return textbook;
     }
 }

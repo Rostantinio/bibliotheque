@@ -37,6 +37,10 @@ public class LibraryMenu {
                     continueApp = false;
                     break;
                 }
+                case 0: {
+                    System.exit(option);
+                    break;
+                }
             }
         }
     }

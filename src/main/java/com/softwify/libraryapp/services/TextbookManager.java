@@ -8,6 +8,7 @@ import com.softwify.libraryapp.util.OptionSelector;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -61,6 +62,7 @@ public class TextbookManager {
                     } catch (ArrayIndexOutOfBoundsException exception) {
                         logger.error("euillez entrer un  identifiant s'il vous plait");
                     }
+                    break;
                 }
                 case "add": {
                     addNewTextbook();
@@ -78,7 +80,7 @@ public class TextbookManager {
         List<Textbook> textbooks = textbookDao.getAll();
         System.out.println("Liste des livres");
         for (Textbook textbook : textbooks) {
-            System.out.println(textbook.getId() + " - " + textbook.getTitle() + " - " + textbook.getFullName());
+            System.out.println(textbook.getId() + " - " + textbook.getTitle());
         }
     }
 
@@ -108,14 +110,16 @@ public class TextbookManager {
 
     public boolean readTextbook(int id) {
         Textbook textbook = textbookDao.get(id);
-        if (textbook == null) {
-            return false;
+        if (textbook == null ) {
+            System.out.println("Il n'existe pas de livre avec l'identifiant : " + id + " dans la liste");
+            return true;
         }
         System.out.println("Titre : " + textbook.getTitle());
         System.out.println("Auteur : " + textbook.getFullName());
         System.out.println("ISBN : " + textbook.getIsbn());
         System.out.println("Editeur : " + textbook.getEditor());
-        System.out.println("Année de publication : " + textbook.getPublicationDate());
+        System.out.println("Année de publication : " + textbook.getPublicationDate()+ "\r\n");
+        returnList();
         return true;
     }
 
@@ -170,10 +174,12 @@ public class TextbookManager {
         if(author.getFirstName() != null && author.getLastName() != null){
             Author existingAuthor = authorDao.getByFirstNameAndLastName(author.getFirstName(), author.getLastName());
             if(existingAuthor != null) {
+                System.out.println("Nouveau livre pour " +existingAuthor.getFullName());
                 Textbook textbook = bookInformation(existingAuthor.getId());
                 saveBook(textbook);
+
             } else {
-                logger.error("L'auteur " + author.getFullName() + " n'existe pas");
+                logger.error("L'auteur :" + author.getFullName() + " n'existe pas");
                 addNewTextbook();
             }
         } else {
@@ -183,7 +189,7 @@ public class TextbookManager {
     }
 
     public Textbook bookInformation(int authorId) throws ParseException {
-        System.out.print("Entrez le titre du livre : ");
+        System.out.print("Quel est le titre ? ");
         String title = optionSelector.readString();
         while (title.isEmpty()) {
             logger.error("Titre vide, veuillez reessayer");
@@ -199,33 +205,35 @@ public class TextbookManager {
             isbnInt = optionSelector.readInt();
         }
 
-        System.out.print("Entrez l'editeur du livre : ");
+        System.out.print("L'éditeur du livre : ");
         String editor = optionSelector.readString();
         while (editor.isEmpty()) {
             logger.error("Editeur vide veuillez reessayer");
             System.out.print("Entrez l'editeur du livre : ");
             editor = optionSelector.readString();
         }
-        System.out.print("Entrez l'année de publication : ");
+        System.out.print("Année de publication : ");
         String date = optionSelector.readDate();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH);
-        Date convertedDate = dateFormat.parse(date);
+        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy", Locale.FRANCE);
+        Date convertedDate;
+        dateFormat.setLenient(false);
+        convertedDate = dateFormat.parse(date);
+
+
 
         while (date.isEmpty()) {
             logger.error("date vide, veuillez reessayer");
             System.out.print("Entrez l'année de publication  ");
             date = optionSelector.readDate();
-            dateFormat = new SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH);
             convertedDate = dateFormat.parse(date);
         }
-
         return new Textbook(1, title, authorId, isbnInt, editor, convertedDate);
     }
 
     private void saveBook(Textbook textbook){
-        Textbook addedTextbook = textbookDao.saveTextbook(textbook);
+        Textbook addedTextbook = textbookDao.save(textbook);
         if (addedTextbook != null){
-            System.out.println("\nLe livre " + textbook.getTitle() + " a été rajouté avec succès.\n");
+            System.out.println("\nLe livre : \""+ textbook.getTitle() + "\" a été ajouté avec succès.\n" + "\"\n");
         } else {
             logger.error("Une erreur est survenue");
         }
